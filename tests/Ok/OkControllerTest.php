@@ -20,18 +20,17 @@ class OkControllerTest extends TestFactorySetup
         $this->client->request(
             'POST',
             '/api/suite',
-            [
-                'headers'=>[
-                    'Content-Type'=>'application/json'
-                ],
-                'json'=>[
-                    'limit'=> 100,
-                    'int1' => 3,
-                    'int2' => 5,
-                    'str1' => 'fizz',
-                    'str2' => 'buzz'
-                ]
-            ]
+            [],
+            [],
+            ['Content-Type'=>'application/json'],
+            json_encode([
+                'max'=> 100,
+                'int1' => 3,
+                'int2' => 5,
+                'str1' => 'fizz',
+                'str2' => 'buzz'
+            ])
+
         );
 
         $this->assertResponseStatusCodeSame(201);
