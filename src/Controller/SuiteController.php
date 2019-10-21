@@ -80,7 +80,7 @@ class SuiteController extends AbstractController
     {
         $response = '';
         $i = 1;
-        while($i < $params->getMax())
+        while($i <= $params->getMax())
         {
             $chunk = "";
             $multipleOfInt1 = $i % $params->getInt1() === 0;

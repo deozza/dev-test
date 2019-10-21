@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78ba7761-ad75-4162-a50f-c2d1c94f991c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SuiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SuiteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/Ok/OkControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Ok/OkControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/db/test-database.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/tests/db/test-database.sqlite" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +133,7 @@
   <component name="ProjectId" id="1SVSHWMW3Gn2PXp8KiaE6MElDKE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/BadRequest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -141,6 +142,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Edenn\Symfony\Edenn\dev-test\tests\BadRequest" />
       <recent name="C:\Users\Edenn\Symfony\Edenn\dev-test\tests\InvalidMethod" />
       <recent name="C:\Users\Edenn\Symfony\Edenn\dev-test\src\Repository" />
     </key>
@@ -167,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571647182243</updated>
-      <workItem from="1571647183474" duration="4076000" />
+      <workItem from="1571647183474" duration="4328000" />
     </task>
     <servers />
   </component>

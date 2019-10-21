@@ -24,16 +24,15 @@ class OkControllerTest extends TestFactorySetup
             [],
             ['Content-Type'=>'application/json'],
             json_encode([
-                'max'=> 100,
-                'int1' => 3,
-                'int2' => 5,
+                'max'=> 6,
+                'int1' => 2,
+                'int2' => 3,
                 'str1' => 'fizz',
                 'str2' => 'buzz'
             ])
-
         );
 
         $this->assertResponseStatusCodeSame(201);
-
+        $this->assertEquals('"1 fizz buzz fizz 5 fizzbuzz "', $this->client->getResponse()->getContent());
     }
 }
