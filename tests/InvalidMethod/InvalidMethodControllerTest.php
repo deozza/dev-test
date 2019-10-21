@@ -84,7 +84,7 @@ class InvalidMethodControllerTest extends TestFactorySetup
     {
         $this->client->request(
             'PATCH',
-            '/api/suite/most-asked',
+            '/api/suites/most-asked',
             [],
             [],
             ['Content-Type'=>'application/json']
@@ -97,7 +97,7 @@ class InvalidMethodControllerTest extends TestFactorySetup
     {
         $this->client->request(
             'PUT',
-            '/api/suite/most-asked',
+            '/api/suites/most-asked',
             [],
             [],
             ['Content-Type'=>'application/json']
@@ -110,7 +110,7 @@ class InvalidMethodControllerTest extends TestFactorySetup
     {
         $this->client->request(
             'DELETE',
-            '/api/suite/most-asked',
+            '/api/suites/most-asked',
             [],
             [],
             ['Content-Type'=>'application/json']

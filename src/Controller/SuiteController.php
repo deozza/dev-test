@@ -76,6 +76,21 @@ class SuiteController extends AbstractController
         return $response;
     }
 
+    /**
+     * @Route(
+     *     "/api/suites/most-asked",
+     *     name="get_most_asked_suite",
+     *     methods={"GET"}
+     * )
+     */
+    public function getMostAskedSuite()
+    {
+        $response = new Response();
+        $response->setStatusCode(200);
+
+        return $response;
+    }
+
     private function formatResponseOfSuite(SuiteParams $params)
     {
         $response = '';

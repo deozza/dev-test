@@ -43,8 +43,7 @@ class OkControllerTest extends TestFactorySetup
             '/api/suites/most-asked',
             [],
             [],
-            ['Content-Type'=>'application/json'],
-            []
+            ['Content-Type'=>'application/json']
         );
 
         $this->assertResponseStatusCodeSame(200);
