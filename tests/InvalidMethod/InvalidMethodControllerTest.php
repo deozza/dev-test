@@ -66,4 +66,56 @@ class InvalidMethodControllerTest extends TestFactorySetup
 
         $this->assertResponseStatusCodeSame(405);
     }
+
+    public function testSuiteMostAskedInvalidPost()
+    {
+        $this->client->request(
+            'POST',
+            '/api/suites/most-asked',
+            [],
+            [],
+            ['Content-Type'=>'application/json']
+        );
+
+        $this->assertResponseStatusCodeSame(405);
+    }
+
+    public function testSuiteMostAskedInvalidPatch()
+    {
+        $this->client->request(
+            'PATCH',
+            '/api/suite/most-asked',
+            [],
+            [],
+            ['Content-Type'=>'application/json']
+        );
+
+        $this->assertResponseStatusCodeSame(405);
+    }
+
+    public function testSuiteMostAskedInvalidPut()
+    {
+        $this->client->request(
+            'PUT',
+            '/api/suite/most-asked',
+            [],
+            [],
+            ['Content-Type'=>'application/json']
+        );
+
+        $this->assertResponseStatusCodeSame(405);
+    }
+
+    public function testSuiteMostAskedInvalidDelete()
+    {
+        $this->client->request(
+            'DELETE',
+            '/api/suite/most-asked',
+            [],
+            [],
+            ['Content-Type'=>'application/json']
+        );
+
+        $this->assertResponseStatusCodeSame(405);
+    }
 }

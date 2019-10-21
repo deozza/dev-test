@@ -35,4 +35,18 @@ class OkControllerTest extends TestFactorySetup
         $this->assertResponseStatusCodeSame(201);
         $this->assertEquals('"1 fizz buzz fizz 5 fizzbuzz "', $this->client->getResponse()->getContent());
     }
+
+    public function testStatGet()
+    {
+        $this->client->request(
+            'GET',
+            '/api/suites/most-asked',
+            [],
+            [],
+            ['Content-Type'=>'application/json'],
+            []
+        );
+
+        $this->assertResponseStatusCodeSame(200);
+    }
 }
